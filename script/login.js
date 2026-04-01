@@ -8,9 +8,9 @@ document.getElementById("login-btn").addEventListener('click',function(){
     const pinNumber = inputPin.value;
     // console.log(pinNumber);
 
-    if(contactNumber==='1234567890' && pinNumber==="1234"){
+    if(contactNumber.length !=11 && pinNumber==="1234"){
         alert('Login Succesfull');
-        window.location.assign("/Assignment/home.html");
+        window.location.assign("/home.html");
     }
     else{
         alert('Login failed')
